@@ -42,11 +42,11 @@ body {
         width: 100%;
         justify-content: space-evenly;
         text-align: center;
-        & div {
-            width: 25%;
-        }
+        font-size: 25px;
+        height: 80px;
         & p {
             display: block;
+            font-size: 25px;
         }
     }
     & .temperature {
@@ -66,8 +66,22 @@ body {
             margin-top: 13px;
         }
     }
-    & .city {
+    & #city {
         margin: 30px 0;
+        color: lightgray;
+        font-size: 35px;
+    }
+    & #weather-type {
+        color: lightgray;
+        font-size: 25px;
+        text-align: center;
+    }
+    & #img  {
+        & i {
+            margin-top: 30px;
+            text-align: center;
+            color: lightgray;
+        }
     }
 }
 

@@ -12,30 +12,44 @@
 <body>
     <article class="app">
         <form>
-            <input type="text" placeholder="Enter a city">
-            <button type="button">get</button>
+            <input type="text" placeholder="Enter a city" onclick="value = ''; style.color = 'black'">
+            <button type="button" id="btn">get</button>
         </form>
         <section class="weather-conditions">
-            <div id="cloud"><i class="fas fa-cloud fa-2x"></i></div>
-            <div id="wind"><i class="fas fa-wind fa-2x"></i></div>
-            <div id="humidity"><i class="fas fa-tint fa-2x"></i></div>
+            <div id="cloud">
+                <i class="fas fa-cloud fa-2x"></i>
+                <div id="num-cloud"></div>
+            </div>
+            <div id="wind">
+                <i class="fas fa-wind fa-2x"></i>
+                <p id="num-wind"></p>
+            </div>
+            <div id="humidity">
+                <i class="fas fa-tint fa-2x"></i>
+                <p id="num-humidity"></p>
+            </div>
         </section>
         <section>
             <section class="temperature">
-                <div>1</div>
-                <div id="temp">°C</div>
+                <div id="num-temp"></div>
+                <div id="temp"></div>
                 <div>
-                    <p>↑1</p>
-                    <p>↓3</p>
+                    <p id="max-temp"></p>
+                    <p id="min-temp"></p>
                 </div>
             </section>
         </section>
         <section>
-            <p class="city">Minsk, BY</p>
+            <p id="city"></p>
         </section>
-        <section>
-            <p class="weather-type">Sunny</p>
+        <section id="img">
+            <p id="weather-type"></p> 
+            <i class="fas fa-cloud fa-4x state-cloud" style="display: none;"></i> 
+            <i class="fas fa-sun fa-4x state-sunny" style="display: none;"></i>
+            <i class="fas fa-cloud-rain fa-4x state-rain" style="display: none;"></i>
         </section>
     </article>
+    <div id="current_date_time_block2" style="display: none;"></div>
+    <script src="index.js"></script>
 </body>
 </html>

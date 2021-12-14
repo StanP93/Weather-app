@@ -44,12 +44,12 @@ body {
   width: 100%;
   justify-content: space-evenly;
   text-align: center;
-}
-.app .weather-conditions div {
-  width: 25%;
+  font-size: 25px;
+  height: 80px;
 }
 .app .weather-conditions p {
   display: block;
+  font-size: 25px;
 }
 .app .temperature {
   display: grid;
@@ -68,6 +68,18 @@ body {
   font-size: 40px;
   margin-top: 13px;
 }
-.app .city {
+.app #city {
   margin: 30px 0;
+  color: lightgray;
+  font-size: 35px;
+}
+.app #weather-type {
+  color: lightgray;
+  font-size: 25px;
+  text-align: center;
+}
+.app #img i {
+  margin-top: 30px;
+  text-align: center;
+  color: lightgray;
 }
