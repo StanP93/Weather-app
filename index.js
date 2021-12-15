@@ -77,7 +77,7 @@ class Weather {
                 enter.value = "Re-enter!";
                 enter.style.color = 'red';
             }
-        })
+        }) 
     }
     run() {
         this.getData();
