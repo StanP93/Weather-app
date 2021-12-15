@@ -10,13 +10,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(180deg, #74cbdd, #24d0d6);
+  background: linear-gradient(180deg, #74cbdd, #7852bb);
   box-shadow: 0px 10px 10px 10px rgba(34, 60, 80, 0.2);
   width: 400px;
   height: 600px;
 }
 .app form {
   position: relative;
+  text-align: center;
 }
 .app form input {
   margin-top: 30px;
@@ -27,6 +28,12 @@ body {
   outline: none;
   height: 40px;
   padding-left: 10px;
+  font-family: 'Baloo Bhaijaan 2', sans-serif;
+  font-size: 18px;
+  width: 50%;
+}
+.app form input::placeholder {
+  color: black;
 }
 .app form button {
   width: 61px;
@@ -36,6 +43,15 @@ body {
   border: none;
   outline: none;
   height: 40px;
+  text-transform: capitalize;
+  font-family: 'Baloo Bhaijaan 2', sans-serif;
+  font-size: 18px;
+}
+.app form button:hover {
+  cursor: pointer;
+}
+.app form button:active {
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
 }
 .app .weather-conditions {
   display: flex;
